@@ -10,6 +10,7 @@ To run the Flutter project in its development environment, follow the below inst
 4) Paste the following lines of code into the terminal:
 
 curl -C - --output android-sdk-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip 
+
 mkdir androidsdktools
 unzip android-sdk-tools.zip -d androidsdktools
 rm android-sdk-tools.zip
