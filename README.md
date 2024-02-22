@@ -24,5 +24,6 @@ mkdir flutter
 tar -xf flutter.tar.xz -C flutter
 
 rm flutter.tar.xz
---------------------
+
+-------------------------
 Once this is done, the container is ready to develop Flutter applications and run my Flutter project.
