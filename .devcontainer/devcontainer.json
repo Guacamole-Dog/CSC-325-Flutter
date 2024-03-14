@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
+	"name": "FlutterDev",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
@@ -15,16 +15,26 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": {
+        "pub-cache own": "sudo chown -R vscode /flutter/.pub-cache/",
+        "version": "sudo chown -R vs /flutter/bin/cache/flutter_version/"
+    },
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash"
+			},
+			"extensions": [
+				"dart-code.dart-code",
+				"dart-code.flutter"
+			]
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 
-	"postCreateCommand": {
-        "cache own": "sudo chown -R vscode /flutter/.pub-cache/",
-        "chown": "sudo chown -R vs /flutter/bin/cache/flutter_version/"
-    }
+	
 }
