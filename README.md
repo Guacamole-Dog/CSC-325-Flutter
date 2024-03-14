@@ -1,16 +1,11 @@
-# myfirstflutter
+# CSC-325-Flutter
+This contains my Flutter project, as well as a development container with all of the necessities and dependencies needed.
 
-A new Flutter project.
+# Instructions
+To run the Flutter project in its development environment, follow the below instructions.
 
-## Getting Started
+1) Copy the devcontainer file into the root your project file
+2) Open your project file in VSCode
+3) Press F1 and select Dev Containers: Reopen in Container
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Once this is done, the container is ready to develop Flutter applications and run my Flutter project.
